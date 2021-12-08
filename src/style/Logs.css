@@ -1,0 +1,15 @@
+div.entry{
+  background-color: rgb(24, 24, 24);
+  border-radius: 5px;
+  padding: 0.001em 1.5em;
+  margin: 1em 5em;
+}
+
+div.entry button {
+  display: block;
+  margin: 1em 1em 1.75em auto
+}
+
+h3{
+  font-size: 1.5em;
+}

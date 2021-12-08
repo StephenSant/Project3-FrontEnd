@@ -1,0 +1,92 @@
+div.info{
+  background-color: rgb(24, 24, 24);
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 5em;
+  display: flex;
+}
+div.info div{
+  margin: auto;
+  display: flex;
+}
+div.info div div{
+  margin: auto 2em;
+}
+ul{
+  display:inline-grid;
+  margin:auto;
+  list-style: none;
+}
+img.planet{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.pie{
+  height: 15em;
+  width: 15em;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th{
+  border: 1px solid #ddd;
+  padding: 9px;
+  text-align: center;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+}
+ul li:nth-child(1)::before {
+  content: "\2022";
+  color: #0C4AED;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+ul li:nth-child(2)::before {
+  content: "\2022";
+  color: #0C8BF7;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+ul li:nth-child(3)::before {
+  content: "\2022";
+  color: #00B5E0;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+ul li:nth-child(4)::before {
+  content: "\2022";
+  color: #0CF7E7;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+ul li:nth-child(5)::before {
+  content: "\2022";
+  color: #0CED9E;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+ul li:nth-child(6)::before {
+  content: "\2022";
+  color: #0CED6A;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
