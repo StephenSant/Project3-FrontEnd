@@ -11,7 +11,7 @@ class Logs extends Component {
   }
 
   componentDidMount(){
-    axios('http://localhost:3000/crew_entries.json').then((response) => {
+    axios('https://project3-expedition.herokuapp.com/crew_entries.json').then((response) => {
       this.setState({entries: response.data});
     })
   }

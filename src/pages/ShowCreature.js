@@ -11,7 +11,7 @@ class Creatures extends Component {
   }
 
   componentDidMount(){
-    axios('http://localhost:3000/creatures.json').then((response) => {
+    axios('https://project3-expedition.herokuapp.com/creatures.json').then((response) => {
       this.setState({creatures: response.data});
     })
   }
