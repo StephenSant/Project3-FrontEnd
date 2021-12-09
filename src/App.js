@@ -1,6 +1,6 @@
 import Home from './pages/Home.js';
 import Creatures from './pages/Creatures.js';
-import CreatureIndex from './pages/CreatureIndex.js';
+import ShowCreature from './pages/ShowCreature.js';
 import Logs from './pages/Logs.js';
 import Planet from './pages/Planet.js';
 import System from './pages/System.js';
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element = {<Home/>}/>
           <Route path="/creatures" element = {<Creatures/>}/>
-          <Route path="/creature/index" element = {<CreatureIndex/>}/>
+          <Route path="/creature/show" element = {<ShowCreature/>}/>
           <Route path="/logs" element = {<Logs/>}/>
           <Route path="/planet" element = {<Planet/>}/>
           <Route path="/system" element = {<System/>}/>
