@@ -1,14 +1,13 @@
 import '../style/Logs.css'
 const Entry = (props) => {
 
-  const content = props.props.entry_text
+  const content = props.props.content
   const dayWritten = props.props.day_written
-  const entryType = props.props.entry_type
-  const entryNumber = props.props.entry_number
+  const logType = props.props.log_type
 
   return(
     <div className="entry">
-      <h3>{dayWritten}: | {entryType} Entry: {entryNumber}  | Dr. Carl Baker - Geologist</h3>
+      <h3>Day {dayWritten} | {logType} Logs | Dr. Carl Baker - Geologist</h3>
       <p>{content}</p>
       <button>Read Less</button>
     </div>
