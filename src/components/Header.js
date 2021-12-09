@@ -6,7 +6,7 @@ const Header = () => {
       <nav>
         <a href="/planet">Planet Info</a>
         <a href="/system">Star System</a>
-        <a href="/animals">Animal Database</a>
+        <a href="/creatures">Creature Database</a>
         <a href="/logs">Mission Logs</a>
         <a href="/">Home</a>
       </nav>

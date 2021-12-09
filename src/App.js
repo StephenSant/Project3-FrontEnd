@@ -1,5 +1,6 @@
 import Home from './pages/Home.js';
-import Animals from './pages/Animals.js';
+import Creatures from './pages/Creatures.js';
+import CreatureIndex from './pages/CreatureIndex.js';
 import Logs from './pages/Logs.js';
 import Planet from './pages/Planet.js';
 import System from './pages/System.js';
@@ -14,7 +15,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element = {<Home/>}/>
-          <Route path="/animals" element = {<Animals/>}/>
+          <Route path="/creatures" element = {<Creatures/>}/>
+          <Route path="/creature/index" element = {<CreatureIndex/>}/>
           <Route path="/logs" element = {<Logs/>}/>
           <Route path="/planet" element = {<Planet/>}/>
           <Route path="/system" element = {<System/>}/>

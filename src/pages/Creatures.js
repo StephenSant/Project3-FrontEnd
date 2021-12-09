@@ -1,9 +1,9 @@
-import '../style/Animal.css'
+import '../style/Creatures.css'
 import Thumbnail from '../components/Thumbnail.js'
 import axios from 'axios';
 import React, {Component} from 'react';
 
-class Animals extends Component {
+class Creatures extends Component {
   constructor(){
     super();
     this.state = {
@@ -19,9 +19,9 @@ class Animals extends Component {
   render(){
     return(
       <main>
-        <Thumbnail props = {this.state.creatures[0]}/>
+          <Thumbnail props = {this.state.creatures[0]}/>
       </main>
     )
   }
 }
-export default Animals;
+export default Creatures;
