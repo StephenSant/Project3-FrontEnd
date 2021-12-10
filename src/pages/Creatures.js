@@ -14,11 +14,11 @@ class Creatures extends Component {
   }
 
   loopThroughThumbnails = () => {
+    const temp = [];
     for (let i = 0; i < this.state.creatures.length; i++) {
-      return(
-        <Thumbnail props ={this.state.creatures[i]}/>
-      )
+        temp.push(<Thumbnail props ={this.state.creatures[i]}/>)
     }
+    return temp
   }
 
   componentDidMount(){
