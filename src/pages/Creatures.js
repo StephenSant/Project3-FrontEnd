@@ -4,10 +4,20 @@ import axios from 'axios';
 import React, {Component} from 'react';
 
 class Creatures extends Component {
+  
   constructor(){
     super();
     this.state = {
       creatures:[{}]
+    }
+    
+  }
+
+  loopThroughThumbnails = () => {
+    for (let i = 0; i < this.state.creatures.length; i++) {
+      return(
+        <Thumbnail props ={this.state.creatures[i]}/>
+      )
     }
   }
 
@@ -16,12 +26,16 @@ class Creatures extends Component {
       this.setState({creatures: response.data});
     })
   }
+  
   render(){
     return(
       <main>
-          <Thumbnail props = {this.state.creatures[0]}/>
+          {this.loopThroughThumbnails()}
       </main>
     )
   }
 }
+
+
+
 export default Creatures;

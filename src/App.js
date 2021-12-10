@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element = {<Home/>}/>
           <Route path="/creatures" element = {<Creatures/>}/>
-          <Route path="/creature/show" element = {<ShowCreature/>}/>
+          <Route path="/creature/show/:id" element = {<ShowCreature/>}/>
           <Route path="/logs" element = {<Logs/>}/>
           <Route path="/planet" element = {<Planet/>}/>
           <Route path="/system" element = {<System/>}/>

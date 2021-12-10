@@ -6,7 +6,8 @@ class Logs extends Component {
   constructor(){
     super();
     this.state = {
-      entries:[{}]
+      entries:[{}],
+      crewMembers:[{}]
     }
   }
 
@@ -14,13 +15,16 @@ class Logs extends Component {
     axios('https://project3-expedition.herokuapp.com/log_entries.json').then((response) => {
       this.setState({entries: response.data});
     })
+    axios('https://project3-expedition.herokuapp.com/crew_members.json').then((response) => {
+      this.setState({crewMembers: response.data});
+    })
   }
 
   render(){
     return(
       <main>
         {/* Loop this */}
-        <Entry props = {this.state.entries[0]}/>
+        <Entry props = {this.state}/>
       </main>
     )
   }
