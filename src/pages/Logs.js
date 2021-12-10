@@ -1,6 +1,6 @@
-import Entry from '../components/Entry.js';
 import React, {Component} from 'react';
 import axios from 'axios';
+import '../style/Logs.css'
 
 class Logs extends Component {
   constructor(){
@@ -20,11 +20,23 @@ class Logs extends Component {
     })
   }
 
+
+
   render(){
+
+    const items = []
+
+    for (const [index, value] of this.state.entries.entries()) {
+      items.push(<div className="entry">
+        <h3>Day {this.state.entries[index].day_written} | {this.state.entries[index].log_type} Log | {this.state.crewMembers[index].title} {this.state.crewMembers[index].first_name} {this.state.crewMembers[index].last_name} - {this.state.crewMembers[index].job}</h3>
+        <p>{this.state.entries[index].content}</p>
+        <button>Read Less</button>
+        </div>)
+    }
+
     return(
       <main>
-        {/* Loop this */}
-        <Entry props = {this.state}/>
+        {items}
       </main>
     )
   }
